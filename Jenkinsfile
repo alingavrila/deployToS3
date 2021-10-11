@@ -10,10 +10,10 @@
                     uploadToS3.upload()
                 }
             }
-            stage('Deploy EC2') {                  
-                steps {
-                    deployEC2()
-                }
-            }
+            // stage('Deploy EC2') {                  
+            //     steps {
+            //         deployEC2()
+            //     }
+            // }
         }
     }
