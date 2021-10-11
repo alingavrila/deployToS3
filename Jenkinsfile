@@ -12,10 +12,10 @@
                     }
                 }
             }
-            // stage('Deploy EC2') {                  
-            //     steps {
-            //         deployEC2()
-            //     }
-            // }
+            stage('Deploy Stack') {                  
+                steps {
+                    deployStack()
+                }
+            }
         }
     }
