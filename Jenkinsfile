@@ -7,7 +7,9 @@
         stages {
             stage('Upload template to S3') {                  
                 steps {
-                    uploadToS3.upload()
+                    script {
+                        uploadToS3.upload()
+                    }
                 }
             }
             // stage('Deploy EC2') {                  
