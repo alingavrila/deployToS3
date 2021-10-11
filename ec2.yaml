@@ -17,6 +17,7 @@ Resources:
           FromPort: '80'
           ToPort: '80'
           CidrIp: 0.0.0.0/0
+      VpcId: vpc-03d907e6e33d6a7ae
   Ec2Instance:
     Type: AWS::EC2::Instance
     Properties:
