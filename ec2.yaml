@@ -1,27 +1,7 @@
 Resources:
-  SecurityGroup:
-    Type: AWS::EC2::SecurityGroup
-    Properties:
-      GroupDescription: Enable SSH access via port 22 and Enable Http via port 80
-      SecurityGroupEgress:
-        - IpProtocol: '-1'
-          FromPort: 0
-          ToPort: 65535
-          CidrIp: 0.0.0.0/0
-      SecurityGroupIngress:
-        - IpProtocol: tcp
-          FromPort: '22'
-          ToPort: '22'
-          CidrIp: 0.0.0.0/0
-        - IpProtocol: tcp
-          FromPort: '80'
-          ToPort: '80'
-          CidrIp: 0.0.0.0/0
-      VpcId: vpc-03d907e6e33d6a7ae
   Ec2Instance:
     Type: AWS::EC2::Instance
     Properties:
+      AvailabilityZone: us-east-1a
       InstanceType: t2.micro
       ImageId: ami-02e136e904f3da870
-      SecurityGroupIds:
-          - !GetAtt SecurityGroup.GroupId
