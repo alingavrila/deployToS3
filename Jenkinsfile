@@ -12,10 +12,10 @@
                     }
                 }
             }
-            stage('Deploy Stack') {                  
-                steps {
-                    deployStack()
-                }
-            }
+            // stage('Deploy Stack') {                  
+            //     steps {
+            //         deployStack()
+            //     }
+            // }
         }
     }
