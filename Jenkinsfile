@@ -8,9 +8,9 @@
         }
         parameters {
             string(
-                name: 'Stack Name'
-                defaultValue: 'stack'
-                description: 'The name of the stack'
+                name: 'Stack Name',
+                defaultValue: 'stack',
+                description: 'The name of the stack',
             )
         }
         stages {
