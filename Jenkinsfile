@@ -2,7 +2,8 @@
     pipeline {
         agent any
         environment {
-            AWS_CRED = 'deploytos3'
+            AWS_CRED = 'deploytos3',
+            S3BUCKET = 'mybucketname123321123'
         }
         stages {
             stage('Upload template to S3') {                  
