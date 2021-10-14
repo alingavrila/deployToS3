@@ -2,7 +2,7 @@
     pipeline {
         agent any
         environment {
-            AWS_CRED = 'deploytos3',
+            AWS_CRED = 'deploytos3'
             bucketName = "mybucketname123321123"
             stackFileName = "cloudformation.yaml"
         }
